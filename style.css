@@ -5,7 +5,8 @@ header{
 .conainer_cabecalho{
     display: flex;
     justify-content: space-between;
-    width:1440px;
+    width: 90%;
+    max-width: 1440px;
     background-color: aquamarine;
     margin-left: 0 auto;
     height: 100%;
@@ -17,8 +18,19 @@ header{
   height: 50px; 
 }
 
+.box_busca{
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 10px;
+}
+
 .icone_lupa{
     height: 24px;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    fill: #b0b0b0;
 }
 
 .logo{
@@ -26,9 +38,55 @@ header{
 }
 
 .campo_busca{
-    width: 500px;
-    height: 32px;
+    width: 100px;
+    height: 42px;
     border-radius: 10px;
     border: solid 1px #cccccc; 
+    padding-left: 2.5rem;
+     font-family: "Bellota", system-ui;
+     font-size: 1rem;
+}
+
+.banner{
+   background-image: url(./assets/imgs/banner.png);  
+   width: 100%;
+  aspect-ratio: 3.2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteiner{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0% auto;
+}
+
+.titulo{
+    display: flex;
+    background-color: blueviolet;
+}
+
+.titulo span{
+    font-size: 48px;
+}
+
+.titulo hr{
+    width: 300px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    border: #ffd188;
+
+}
+
+.acessivel{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    
+
 }
 
