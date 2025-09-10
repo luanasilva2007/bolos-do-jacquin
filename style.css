@@ -1,19 +1,20 @@
-
-  psdding:
-  
-  font-family: "Bellota", system-ui{
-
-   }
-
-body{
-background-color: ;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "bellota", system-ui;
 }
 
-header{
+body {
+    background-color: #fff6ff;
+}
+
+header {
     background-color: #ffd188;
     height: 100px;
 }
-.conainer_cabecalho{
+
+.conainer_cabecalho {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -25,18 +26,18 @@ header{
 
 }
 
-.icone_home{
-  height: 50px; 
+.icone_home {
+    height: 50px;
 }
 
-.box_busca{
+.box_busca {
     position: relative;
     width: 60%;
     max-width: 500px;
     margin: 0 10px;
 }
 
-.icone_lupa{
+.icone_lupa {
     height: 24px;
     position: absolute;
     left: 9px;
@@ -44,69 +45,69 @@ header{
     fill: #b0b0b0;
 }
 
-.logo{
+.logo {
     height: 60px;
 }
 
-.campo_busca{
+.campo_busca {
     width: 100px;
     height: 42px;
     border-radius: 10px;
-    border: solid 1px #cccccc; 
+    border: solid 1px #cccccc;
     padding-left: 2.5rem;
-     font-size: 1rem;
+    font-size: 1rem;
 }
 
-.banner{
-   background-image: url(./assets/imgs/banner.png);  
-   width: 100%;
-  aspect-ratio: 3.2;
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner {
+    background-image: url(./assets/imgs/banner.png);
+    width: 100%;
+    aspect-ratio: 3.2;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.conteiner{
+.conteiner {
     width: 90%;
     max-width: 1440px;
     margin: 0% auto;
 }
 
-.titulo{
+.titulo {
     display: flex;
     background-color: blueviolet;
 }
 
-.titulo span{
+.titulo span {
     font-size: 48px;
 }
 
-.titulo hr{
+.titulo hr {
     width: 300px;
     height: 4px;
     border: none;
     border-radius: 2px;
-    border: #ffd188;
+    background-color: #ffd188;
 
 }
 
-.acessivel{
+.acessivel {
     position: absolute;
     width: 1px;
     height: 1px;
     overflow: hidden;
     clip-path: inset(50%);
     white-space: nowrap;
-    
+
 
 }
 
 
 /*cards */
-.cards{
-display: flex;
-flex-wrap: wrap;
-gap: 10%;
-justify-content: center;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
 
 }
 
@@ -115,34 +116,77 @@ justify-content: center;
 
 
 
-.card{
+.card {
 
 
     width: 350px;
     height: 500px;
-    background-color: aqua; 
-    border-radius: 30px; 
-    text-align: center; 
+    background-color: aqua;
+    border-radius: 30px;
+    text-align: center;
 
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding-bottom: 10px;
- margin-bottom: 100px;
- box-shadow: 0 4px 4px 2px #00000025
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025
 }
 
 
 
-.card img{
+.card img {
     width: 100%;
 
 }
 
 .card p,
-.card span{
-font-size: 18px;
-width: 90%;
+.card span {
+    font-size: 18px;
+    width: 90%;
 
+}
+
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5 ease-in-out,
+        filter 0.5 ease-in-out;
+
+}
+
+.whatsapp img {
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
+}
+
+.foster {
+    width: 100%;
+    height: 60px;
+    background-color: #ffd188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.foster p {
+    font-family: "julius sans one";
+}
+
+
+
+
+/* MEDIA */
+@media screen and (max-width:600px) {
+    .banner {
+        aspect-ratio: 2.0;
+    }
 }
